@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+﻿apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: hello
-          image: quay.io/redhattraining/hello-world-nginx:latest
+          image: nginxinc/nginx-unprivileged:stable
           ports:
             - containerPort: 8080
           resources:
